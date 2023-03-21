@@ -1,22 +1,11 @@
-import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import ProTip from './ProTip';
-import Navbar from './components/molecules/navbar';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}.
-    </Typography>
-  );
-}
+import * as React from "react";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import ProTip from "./ProTip";
+import Navbar from "./components/molecules/Navbar";
+import Footer from "./components/molecules/Footer";
 
 export default function App() {
   return (
@@ -28,7 +17,7 @@ export default function App() {
             Material UI Create React App example in TypeScript
           </Typography>
           <ProTip />
-          <Copyright />
+          <Footer />
         </Box>
       </Container>
     </>
